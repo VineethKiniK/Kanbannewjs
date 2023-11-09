@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer ></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    </head>
+<body>
+    <div class="Board">
+        <div class="todo-form">
+            <input type=" text" placeholder="todo" id="todo-input" >
+            <button type="submit">+ Add</button>
+            <form>
+                <div class="lanes">
+                    <div class="swin-lane" id="todo-lane">
+                        <h3 class="heading">TODO</h3>
+                            <p class="task" draggable="true">Get groceries</p>
+                            <p class="task" draggable="true">Do some task</p>
+                            <p class="task" draggable="true">Complete Assignments</p>
+                    </div>
+                    <div class="swin-lane">
+                        <h3 class="heading">Doing</h3>
+                            <p class="task" draggable="true">Work</p>
+                            <p class="task" draggable="true">Do some task</p>
+                          
+                    </div>
+                    <div class="swin-lane">
+                        <h3 class="heading">Done</h3>
+                            <p class="task" draggable="true">Get groceries</p>
+                            <p class="task" draggable="true">Grab some cookies!</p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
